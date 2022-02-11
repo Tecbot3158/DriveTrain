@@ -36,7 +36,7 @@ public Drivetrain ()
      rightMotorPort = new TecbotSpeedController(Robotmap.rightMotorPort,  TypeOfMotor.TALON_SRX) ;
      rightMotorPort1 = new TecbotSpeedController (Robotmap.rightMotorPort1, TypeOfMotor.TALON_SRX);
      rightMotorPort.setInverted(true);
-     rightMotorPort.setInverted(true);;;
+     rightMotorPort1.setInverted(true);
 
 
      leftMotorPort = new TecbotSpeedController (Robotmap.leftMotorPort, TypeOfMotor.TALON_SRX);
