@@ -32,8 +32,8 @@ public class DefaultDrive extends CommandBase {
   @Override
   public void execute() {
 
-double joystickx = oix.getleftx();
-double joysticky = oix.getlefty();
+double joystickx = oix.getPilot().getLeftAxisX();
+double joysticky = oix.getPilot().getTriggers();
 
     chassis.driveTank(joysticky, joystickx);
 

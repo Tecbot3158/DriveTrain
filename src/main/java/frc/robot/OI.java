@@ -1,31 +1,23 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
+import frc.robot.resources.TecbotController;
+import frc.robot.resources.TecbotController.TypeOfController;
 
 public class OI {
-    Joystick pilot;
+    TecbotController pilot;
 
     public OI (){
         
-        pilot = new Joystick (0);
+        pilot = new TecbotController (0, TypeOfController.PS4);
+
 
     }
     
 
-        public double getleftx(){
-        return pilot.getRawAxis(Robotmap.joystickx);
-    
+    public TecbotController getPilot(){
+
+        return pilot;
     }
-    public double getlefty (){
-        return pilot.getRawAxis(Robotmap.joysticky);
-    
-    }
-    public double getrightx (){
-        return pilot.getRawAxis(Robotmap.joystickxs);
-    
-    }
-    public double getrighty (){
-        return pilot.getRawAxis(Robotmap.joystickys);
-    
-    }
+
 }
